@@ -22,6 +22,8 @@ public:
 private slots:
     void get_new_frame(const cv::Mat&);
 
+    void on_action_about_invisibility_cloak_triggered();
+
 private:
     Ui::MainWindow *ui;
 
