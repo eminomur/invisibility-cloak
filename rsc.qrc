@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/rsc">
+        <file>icon/mask.svg</file>
+    </qresource>
+</RCC>
