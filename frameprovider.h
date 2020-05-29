@@ -24,15 +24,11 @@ class FrameProvider : public QWidget
 public:
     explicit FrameProvider(int index = 0, QWidget *parent = nullptr);
     ~FrameProvider();
-
 signals:
-    void new_frame_ready(const cv::Mat&);
-
+    void new_frame_ready(cv::Mat&);
 private:
     QThread *frame_provider_thread;
-
     cv::VideoCapture video_capture;
-
     bool shooting_flag;
 };
 
